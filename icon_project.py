@@ -46,7 +46,8 @@ def transform_list(a_list):
     
 def visualize_list(a_transformed_list):
     ''' a function that takes a transformed symbol list and prints it, 10 characters at a time to form the user's icon '''
-
+    # TODO: there has to be a better way to do this :|
+    # future katie: convert to string and split up? maybe a way to split up a list? 
     for item in a_transformed_list[0:9]:
         print(item, end="")
     print("\t")
