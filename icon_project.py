@@ -22,7 +22,8 @@ def get_input():
             counter += 1
             icon_list.append(string)
             string = ""
-    #print(icon_list)
+    #formatting 
+    print("\n\n")
     return icon_list 
 
 
