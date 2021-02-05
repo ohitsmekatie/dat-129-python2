@@ -14,6 +14,7 @@ def get_input():
     while counter != 10:
         string = input("Please enter ten 1's and 0's with no spaces: ")
         # check the length of the string to make sure it's 10
+        #TODO for future katie: something isn't working when you have > 1 wrong length 
         if len(string) != 10:
             print("Sorry, it needs to be ten numbers!")
             # substract from number so the user still has to enter something 10 times
