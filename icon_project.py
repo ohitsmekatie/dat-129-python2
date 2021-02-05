@@ -9,16 +9,16 @@ def get_input():
     #create an empty list to add input to
     icon_list = []
     # set number to 0 so i can incrememt for the while loop
-    num = 0
+    counter = 0
     # while loop that, while number is not 10 continues to ask a user for 10 numbers
     while num != 10:
-        string = input("Please entier ten 1's and 0's with no spaces: ")
-        # for char in string:
-        #     if char != "1" and char != "0":
-        #         string = input("Sorry! You entered numbers that weren't a 1 or 0. Please enter ten 1's and 0's with no spaces: ")
-        #         # reset number to 0 and make them start again
-        #         num = 0
-        num += 1
+        string = input("Please enter ten 1's and 0's with no spaces: ")
+        # check the length of the string to make sure it's 10
+        if len(string) != 10:
+            print("Sorry, it needs to be ten numbers!")
+            # substract from number so the user still has to enter something 10 times
+            counter -= 1
+        counter += 1
         icon_list.append(string)
         string = ""
     #print(icon_list)
@@ -46,38 +46,13 @@ def transform_list(a_list):
     
 def visualize_list(a_transformed_list):
     ''' a function that takes a transformed symbol list and prints it, 10 characters at a time to form the user's icon '''
-    # TODO: there has to be a better way to do this :|
-    # future katie: convert to string and split up? maybe a way to split up a list? 
-    for item in a_transformed_list[0:9]:
-        print(item, end="")
-    print("\t")
-    for item in a_transformed_list[10:19]:
-        print(item, end="")
-    print("\t")
-    for item in a_transformed_list[20:29]:
-        print(item, end="")
-    print("\t")
-    for item in a_transformed_list[30:39]:
-        print(item, end="")
-    print("\t")
-    for item in a_transformed_list[40:49]:
-        print(item, end="")
-    print("\t")
-    for item in a_transformed_list[50:59]:
-        print(item, end="")
-    print("\t")
-    for item in a_transformed_list[60:69]:
-        print(item, end="")
-    print("\t")
-    for item in a_transformed_list[70:79]:
-        print(item, end="")
-    print("\t")
-    for item in a_transformed_list[80:89]:
-        print(item, end="")
-    print("\t")
-    for item in a_transformed_list[90:99]:
-        print(item, end="")
-    print("\t")
+
+    counter = 0
+    for item in a_transformed_list:
+         print(item, end="")
+         counter += 1
+         if counter % 10 == 0:
+            print("\t")
 
   
 def main():
