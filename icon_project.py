@@ -11,16 +11,17 @@ def get_input():
     # set number to 0 so i can incrememt for the while loop
     counter = 0
     # while loop that, while number is not 10 continues to ask a user for 10 numbers
-    while num != 10:
+    while counter != 10:
         string = input("Please enter ten 1's and 0's with no spaces: ")
         # check the length of the string to make sure it's 10
         if len(string) != 10:
             print("Sorry, it needs to be ten numbers!")
             # substract from number so the user still has to enter something 10 times
             counter -= 1
-        counter += 1
-        icon_list.append(string)
-        string = ""
+        if len(string) == 10:
+            counter += 1
+            icon_list.append(string)
+            string = ""
     #print(icon_list)
     return icon_list 
 
