@@ -1,4 +1,4 @@
-# get 100 numbers from a user that will eventually build a 10x10 icon  
+# https://technologyrediscovery.net/python/mod-icons.html
 
 
 def get_input(): 
@@ -44,6 +44,7 @@ def transform_list(a_list):
                 transformed_list.append("ERROR")
     return(transformed_list)
 
+
 def invert_list(a_list):
     ''' a function that takes in a list and transform it to a new list of symbols so it can be printed, but inverted from the original icon'''
     
@@ -61,6 +62,7 @@ def invert_list(a_list):
                 # me lazily handling a non 1 or 0 for right now 
                 inverted_list.append("ERROR")
     return(inverted_list)
+
 
 def visualize_list(a_list):
     ''' a function that takes a transformed symbol list and prints it, 10 characters at a time to form the user's icon '''
@@ -83,7 +85,6 @@ def main():
     visualize_list(transformed_list)
     print("\nYour inverted icon:\n")
     visualize_list(inverted_list)
-
 
 
 if __name__ == "__main__":
