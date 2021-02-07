@@ -14,11 +14,9 @@ def get_input():
     while counter != 10:
         string = input("Please enter ten 1's and 0's with no spaces: ")
         # check the length of the string to make sure it's 10
-        #TODO for future katie: something isn't working when you have > 1 wrong length 
         if len(string) != 10:
             print("Sorry, it needs to be ten numbers!")
             # substract from number so the user still has to enter something 10 times
-            counter -= 1
         if len(string) == 10:
             counter += 1
             icon_list.append(string)
@@ -29,7 +27,7 @@ def get_input():
 
 
 def transform_list(a_list):
-    ''' a function that takes in a list and transform it to a new list of symbols so it can be printed'''
+    ''' a function that takes in a list and transforms it to a new list of symbols so it can be printed'''
     
     # empty list to add symbols to 
     transformed_list = []
@@ -38,20 +36,37 @@ def transform_list(a_list):
         # nested for loop to iterate over each character in the string and checks if it's a 1 or 0 
         for char in item:
             if char == "1":
-                transformed_list.append("x")
+                transformed_list.append(" x ")
             if char == "0":
-                transformed_list.append(" ")
+                transformed_list.append("   ")
             if char != "1" and char != "0":
                 # me lazily handling a non 1 or 0 for right now 
                 transformed_list.append("ERROR")
     return(transformed_list)
 
+def invert_list(a_list):
+    ''' a function that takes in a list and transform it to a new list of symbols so it can be printed, but inverted from the original icon'''
     
-def visualize_list(a_transformed_list):
+    # empty list to add symbols to 
+    inverted_list = []
+    # for loop that iterations over each set of strings in the list 
+    for item in a_list:
+        # nested for loop to iterate over each character in the string and checks if it's a 1 or 0 
+        for char in item:
+            if char == "1":
+                inverted_list.append("  ")
+            if char == "0":
+                inverted_list.append(" x ")
+            if char != "1" and char != "0":
+                # me lazily handling a non 1 or 0 for right now 
+                inverted_list.append("ERROR")
+    return(inverted_list)
+
+def visualize_list(a_list):
     ''' a function that takes a transformed symbol list and prints it, 10 characters at a time to form the user's icon '''
 
     counter = 0
-    for item in a_transformed_list:
+    for item in a_list:
          print(item, end="")
          counter += 1
          if counter % 10 == 0:
@@ -63,7 +78,12 @@ def main():
 
     icon_list = get_input() 
     transformed_list = transform_list(icon_list)
+    inverted_list = invert_list(icon_list)
+    print("Your icon:\n")
     visualize_list(transformed_list)
+    print("\nYour inverted icon:\n")
+    visualize_list(inverted_list)
+
 
 
 if __name__ == "__main__":
