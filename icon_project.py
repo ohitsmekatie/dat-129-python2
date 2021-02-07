@@ -78,6 +78,7 @@ def visualize_list(a_list):
 def main():
     ''' main function to call all other functions '''
 
+    # my_icon = ["1","1","1","1","1","1","1","1","1","1","1","1","0","0","1","1","0","0","1","1","1","1","0","0","1","1","0","0","1","1","1","1","1","1","1","1","1","1","1","1","1","0","1","0","1","0","1","0","1","1","1","0","1","0","1","0","1","0","1","1","1","0","1","0","1","0","1","0","1","1","1","0","1","0","1","0","1","0","1","1","1","0","1","0","1","0","1","0","1","1","1","0","1","0","1","0","1","0","1","1"]
     icon_list = get_input() 
     transformed_list = transform_list(icon_list)
     inverted_list = invert_list(icon_list)
@@ -86,6 +87,8 @@ def main():
     print("\nYour inverted icon:\n")
     visualize_list(inverted_list)
 
+    # my_icon = transform_list(my_icon)
+    # visualize_list(my_icon)
 
 if __name__ == "__main__":
     main()
