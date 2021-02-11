@@ -4,7 +4,9 @@
 def get_input(): 
     ''' a function that explains the program, asks for 100 characters in groups of 10, then returns 1 list'''
 
-    print(''' Welcome to the icon printing program. You will enter 100 characters, in groups of 10, that represent your icon and then it will print out a beautiful terminal based picture. Please only enter 1's and 0's. A 1 represents a space you want filled in and a 0 represents an empty space.\n\n''') 
+    print(''' Welcome to the icon printing program. You will enter 100 characters, in groups of 10, that represent an icon and then it will print out a beautiful terminal based picture for you. 
+    
+    Please only enter 1's and 0's. A 1 represents a space you want filled in and a 0 represents an empty space.\n\n''') 
 
     #create an empty list to add input to
     icon_list = []
@@ -73,6 +75,13 @@ def visualize_list(a_list):
          counter += 1
          if counter % 10 == 0:
             print("\t")
+
+
+# def scale_list(a_list):
+#     for row in icon:
+#         for rep in range(0,scale):
+#             for char in row:
+#                 for horizon rep in range(0,scale)
 
   
 def main():
