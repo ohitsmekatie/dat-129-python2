@@ -15,6 +15,10 @@ def get_input():
     # while loop that, while number is not 10 continues to ask a user for 10 numbers
     while counter != 10:
         string = input("Please enter ten 1's and 0's with no spaces: ")
+        # make sure there aren't any letters 
+        while any(char.isalpha() for char in string) is True:
+            print("Input can only contain 1's and 0's!")
+            string = input("Please enter ten 1's and 0's with no spaces: ")
         # check the length of the string to make sure it's 10
         if len(string) != 10:
             print("Sorry, it needs to be ten numbers!")
@@ -42,7 +46,7 @@ def transform_list(a_list):
             if char == "0":
                 transformed_list.append("   ")
             if char != "1" and char != "0":
-                # me lazily handling a non 1 or 0 for right now 
+                # fall back bc i didn't handle non 1's and 0's in the user input function 
                 transformed_list.append("ERROR")
     return(transformed_list)
 
@@ -76,12 +80,13 @@ def visualize_list(a_list):
          if counter % 10 == 0:
             print("\t")
 
-
-# def scale_list(a_list):
-#     for row in icon:
-#         for rep in range(0,scale):
+# stubbing out the scale function if i do want to implement this later
+#  def scale_list(a_list):
+#     scale_size = int(input("How much would you like to scale the icon: "))
+#     for row in a_list:
+#         for vert_rep in range(0,scale_size):
 #             for char in row:
-#                 for horizon rep in range(0,scale)
+#                 for horz_rep in range(0,scale_size)
 
   
 def main():
