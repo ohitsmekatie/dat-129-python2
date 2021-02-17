@@ -17,7 +17,7 @@ def get_input():
         string = input("Please enter ten 1's and 0's with no spaces: ")
         # make sure there aren't any letters 
         while any(char.isalpha() for char in string) is True:
-            print("Input can only contain 1's and 0's!")
+            print("Input can only contain 1's and 0's and no letters!")
             string = input("Please enter ten 1's and 0's with no spaces: ")
         # check the length of the string to make sure it's 10
         if len(string) != 10:
