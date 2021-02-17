@@ -2,7 +2,7 @@
 
 
 A repository for DAT-129 Python 2 class projects.
-Fall 2021, CCAC 
+Spring 2021, CCAC 
 
 ![](https://media1.giphy.com/media/xT5LMWNOjGqJzUfyve/giphy.gif?cid=ecf05e47a4lohfwvj576xxlttic8swss9vu9i7r0z4rl1t5v&rid=giphy.gif)
 
