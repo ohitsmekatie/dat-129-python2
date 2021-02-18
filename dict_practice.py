@@ -11,6 +11,8 @@ with open("tri_water.csv") as tri_file:
     dreader = csv.DictReader(tri_file)
     # prints the field names
     # print(dreader.fieldnames)
+
+    # a loop that goes through the dicitionary and counts the number of incidents, how many incidents occurred in a given zip, and how many incidents occurred in a given year
     for record in dreader:
         tri_summary["incident_count"] = tri_summary["incident_count"] + 1
         if record["ZIP_CODE"] not in tri_summary["location"]:
