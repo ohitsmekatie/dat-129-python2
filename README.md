@@ -9,5 +9,7 @@ Spring 2021, CCAC
 **Projects:**
 - [Icon project](https://github.com/ohitsmekatie/dat-129-python2/blob/main/icon_project.py)
   - [project details](https://technologyrediscovery.net/python/mod-icons.html)
+- [Dictionary practice](https://github.com/ohitsmekatie/dat-129-python2/blob/main/city_trees_dict_practice.ipynb)
+- JSON practice coming :soon: 
 
 
