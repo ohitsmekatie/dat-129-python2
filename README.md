@@ -8,7 +8,7 @@ Spring 2021, CCAC
 
 **Projects:**
 - [Icon project](https://github.com/ohitsmekatie/dat-129-python2/tree/main/icon-project)
-- [Dictinoary practice](https://github.com/ohitsmekatie/dat-129-python2/tree/main/dict-practice)
+- [Dictionary practice](https://github.com/ohitsmekatie/dat-129-python2/tree/main/dict-practice)
 - [JSON practice](https://github.com/ohitsmekatie/dat-129-python2/tree/main/JSON-practice) 
 
 
