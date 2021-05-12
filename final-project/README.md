@@ -11,7 +11,7 @@
 2. 🌎 Shows you which planet you might want to live on based on your population preferences 
 3. ❓Has a short interactive quiz about the film and planet stats
 
-Here is a link to the Notebook that grabs the data from the Star Wars API and exports it to CSV's if you'd like to reuse the data and play around with it on your own! 
+[Here](https://github.com/ohitsmekatie/dat-229-final-project/blob/main/raw_csv_files/.ipynb_checkpoints/get-final-project-csvs-checkpoint.ipynb) is a link to the Notebook that grabs the data from the Star Wars API and exports it to CSV's if you'd like to reuse the data and play around with it on your own! 
 
 ## Project preview 
 
