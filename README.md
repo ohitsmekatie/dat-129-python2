@@ -13,4 +13,4 @@ Spring 2021, CCAC
 - [APIs](https://github.com/ohitsmekatie/dat-129-python2/tree/main/api-practice)
 - [Peer teaching: Pandas](https://github.com/ohitsmekatie/dat-129-python2/tree/main/peer-teaching-pandas)
 - [Web scraping](https://github.com/ohitsmekatie/dat-129-python2/tree/main/web-scraping)
-- [Final project](https://github.com/ohitsmekatie/dat-129-python2/tree/main/final-project) 👉 Coming soon
+- [Final project](https://github.com/ohitsmekatie/dat-129-python2/tree/main/final-project) 
