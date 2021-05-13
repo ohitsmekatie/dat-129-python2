@@ -5,7 +5,7 @@
 <img width="734" alt="Screen Shot 2021-05-11 at 10 09 44 AM" src="https://user-images.githubusercontent.com/9855295/117829914-2d720e80-b241-11eb-9740-ceef0b66cb85.png">
 
 
-👋 My final project reads in data from the Star Wars API (planets and film endpoints to start) and:
+👋 My final project reads in data from the [Star Wars API (planets and film endpoints to start)](https://swapi.dev/) and:
 
 1. 🪐 📽️ Displays film and planet stats 
 2. 🌎 Shows you which planet you might want to live on based on your population preferences 
